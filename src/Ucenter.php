@@ -1,4 +1,4 @@
-<?php namespace Etouc\Ucenter;
+<?php namespace Etozqfuc\Ucenter;
 
 use Config,Route;
 
@@ -31,7 +31,7 @@ class Ucenter
     }
 
     public function routes(){
-        Route::any(config('ucenter.url').'/api/'.config('ucenter.apifilename'), '\Etouc\Ucenter\Controllers\ApiController@run');
+        Route::any(config('ucenter.url').'/api/'.config('ucenter.apifilename'), '\Etozqfuc\Ucenter\Controllers\ApiController@run');
     }
 
     public function __call($function, $arguments)
