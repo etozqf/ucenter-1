@@ -1,8 +1,8 @@
 <?php
 
-namespace Etozqf\EtoUcenter\Services;
+namespace Etozqf\Ucenter\Services;
 
-class Api implements \Etozqf\EtoUcenter\Contracts\Api
+class Api implements \Etozqf\Ucenter\Contracts\Api
 {
     use Help;
 

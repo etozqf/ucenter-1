@@ -1,18 +1,18 @@
 {
-    "name": "etozqf/ucenter-1",
+    "name": "etozqf/ucenter",
     "description": "ucenter client for laravel",
     "license": "MIT",
     "authors": [
         {
             "name": "etozqf",
-            "email": "78746435@qq.com",
-            "homepage": "http://eto.com",
+            "email": "yes@etozqf.com",
+            "homepage": "http://etozqf.com",
             "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Etozqf\\EtoUcenter\\": "src/"
+            "Etozqf\\Ucenter\\": "src/"
         }
     },
     "require": {
