@@ -14,7 +14,7 @@ composer require etozqf/ucenter1
 ~~~
 'providers' => [
 
-    'Etozqfuc\Ucenter\UcenterServiceProvider'
+    'Etozqfuc\EtoUcenter\UcenterServiceProvider'
 
 ]
 ~~~
@@ -24,7 +24,7 @@ composer require etozqf/ucenter1
 ~~~
 'aliases' => [
 
-    'Ucenter' => 'Etozqfuc\Ucenter\Facades\Ucenter'
+    'EtoUcenter' => 'Etozqfuc\Ucenter\Facades\EtoUcenter'
 
 ]
 ~~~

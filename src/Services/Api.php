@@ -1,8 +1,8 @@
 <?php
 
-namespace Noxue\Ucenter\Services;
+namespace Etozqf\EtoUcenter\Services;
 
-class Api implements \Noxue\Ucenter\Contracts\Api
+class Api implements \Etozqf\EtoUcenter\Contracts\Api
 {
     use Help;
 

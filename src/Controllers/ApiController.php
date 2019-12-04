@@ -1,12 +1,12 @@
 <?php
 
-namespace Noxue\Ucenter\Controllers;
+namespace Etozqf\EtoUcenter\Controllers;
 
 use App\Http\Controllers\Controller;
-use Noxue\Ucenter\Contracts\Api;
+use Etozqf\EtoUcenter\Contracts\Api;
 use Request;
 use Config;
-use Noxue\Ucenter\Services\Help;
+use Etozqf\EtoUcenter\Services\Help;
 
 class ApiController extends Controller
 {

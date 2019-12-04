@@ -1,4 +1,4 @@
-<?php namespace Noxue\Ucenter\Contracts;
+<?php namespace Etozqf\EtoUcenter\Contracts;
 
 interface Api
 {

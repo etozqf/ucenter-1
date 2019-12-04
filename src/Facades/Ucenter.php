@@ -1,10 +1,11 @@
-<?php namespace Noxue\Ucenter\Facades;
+<?php
+
+namespace Etozqf\EtoUcenter\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 class Ucenter extends Facade
 {
-
     /**
      * Get the registered name of the component.
      *
