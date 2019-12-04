@@ -1,6 +1,6 @@
 <?php
 
-namespace Etozqf\Ucenter\Services;
+namespace EtoUc\Ucenter\Services;
 
 trait Help{
 
