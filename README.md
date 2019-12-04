@@ -1,12 +1,12 @@
 ## discuz Ucenter 集成 laravel5.5
 
-说明：本项目在 https://github.com/binaryoung/ucenter 项目的基础上做了修改。
+说明：本项目在 https://github.com/noxue/ucenter 项目的基础上做了修改。
 
-原项目，接口路由地址问题，在做同步登陆的时候不能用session，所以做了修复
+原项目，mysql_connect方法在php7.1已经不用，所以做了修复
 
 运行命令：
 ~~~
-composer require noxue/ucenter
+composer require etozqf/ucenter
 ~~~
 
 安装完后，在 `app/config/app.php` 文件中找到 `providers` 键，
@@ -14,7 +14,7 @@ composer require noxue/ucenter
 ~~~
 'providers' => [
 
-    'Noxue\Ucenter\UcenterServiceProvider'
+    'Etozqf\Ucenter\UcenterServiceProvider'
 
 ]
 ~~~
@@ -24,7 +24,7 @@ composer require noxue/ucenter
 ~~~
 'aliases' => [
 
-    'Ucenter' => 'Noxue\Ucenter\Facades\Ucenter'
+    'Ucenter' => 'Etozqf\Ucenter\Facades\Ucenter'
 
 ]
 ~~~
@@ -52,7 +52,7 @@ return [
     'dbtablepre'     => env('UC_DBTABLEPRE', '`ucenter`.uc_'),
     'dbconnect'      => env('UC_DBCONNECT', '0'),
     'key'            => env('UC_KEY', 'asflkhKFJHGH5648asdfasdfhj9845613asdf'),  //这个是通信密钥，必须和服务端统一【*】
-    'api'            => env('UC_API', 'http://dz.noxue.cn/uc_server'),                  //这个是uc_server的服务端地址【*】
+    'api'            => env('UC_API', 'http://dz.etozqf.cn/uc_server'),                  //这个是uc_server的服务端地址【*】
     'ip'             => env('UC_IP', '127.0.0.1'),
     'charset'        => env('UC_CHARSET', 'utf-8'),
     'appid'          => env('UC_APPID', '1'),   //这里是应用编号
@@ -62,7 +62,7 @@ return [
     'apifilename'    => env('UC_APIFILENAME', 'uc'),
 
     //这里如果要异步登陆，可以直接继承这个类实现其中的方法，也可以创建app/Service/Ucenter.php(文件放哪里都可以，这里只是推荐) 实现该类实现的接口【*】
-    'service'        => env('UC_SERVICE', 'Noxue\Ucenter\Services\Api'),
+    'service'        => env('UC_SERVICE', 'Etozqf\Ucenter\Services\Api'),
 ];
 
 ```
@@ -82,7 +82,7 @@ $result = Ucenter::uc_get_user('admin');
 var_dump($result);
 ~~~
 
-有任何疑问请到此处提问：http://www.noxue.com/f-wenda-1.html
+有任何疑问请到此处提问：http://www.etozqf.com/f-wenda-1.html
 
 ## 联系我
 有问题，请提交issue

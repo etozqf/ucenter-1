@@ -1,18 +1,17 @@
 {
-    "name": "noxue/ucenter",
+    "name": "etozqf/ucenter",
     "description": "ucenter client for laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": "noxue",
-            "email": "yes@noxue.com",
-            "homepage": "http://noxue.com",
+            "name": "etozqf",
+            "email": "78746435@qq.com",
             "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Noxue\\Ucenter\\": "src/"
+            "Etozqf\\Ucenter\\": "src/"
         }
     },
     "require": {

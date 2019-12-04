@@ -1,4 +1,4 @@
-<?php namespace Noxue\Ucenter;
+<?php namespace Etozqf\Ucenter;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -30,6 +30,6 @@ class UcenterServiceProvider extends ServiceProvider
             return new Ucenter;
         });
 
-        $this->app->bind('Noxue\Ucenter\Contracts\Api', config('ucenter.service'));
+        $this->app->bind('Etozqf\Ucenter\Contracts\Api', config('ucenter.service'));
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Noxue\Ucenter\Services;
+namespace Etozqf\Ucenter\Services;
 
 trait Help{
 
