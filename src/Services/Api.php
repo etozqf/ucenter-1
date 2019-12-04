@@ -1,8 +1,8 @@
 <?php
 
-namespace Etozqfuc\Ucenter\Services;
+namespace Noxueeto\Ucenter\Services;
 
-class Api implements \Etozqfuc\Ucenter\Contracts\Api
+class Api implements \Noxueeto\Ucenter\Contracts\Api
 {
     use Help;
 
