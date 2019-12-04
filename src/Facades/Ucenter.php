@@ -1,4 +1,4 @@
-<?php namespace Noxueeto\Ucenter\Facades;
+<?php namespace Noxue\Ucenter\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

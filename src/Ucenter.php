@@ -1,4 +1,4 @@
-<?php namespace Noxueeto\Ucenter;
+<?php namespace Noxue\Ucenter;
 
 use Config,Route;
 
@@ -31,7 +31,7 @@ class Ucenter
     }
 
     public function routes(){
-        Route::any(config('ucenter.url').'/api/'.config('ucenter.apifilename'), '\Noxueeto\Ucenter\Controllers\ApiController@run');
+        Route::any(config('ucenter.url').'/api/'.config('ucenter.apifilename'), '\Noxue\Ucenter\Controllers\ApiController@run');
     }
 
     public function __call($function, $arguments)

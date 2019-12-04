@@ -1,12 +1,12 @@
 <?php
 
-namespace Noxueeto\Ucenter\Controllers;
+namespace Noxue\Ucenter\Controllers;
 
 use App\Http\Controllers\Controller;
-use Noxueeto\Ucenter\Contracts\Api;
+use Noxue\Ucenter\Contracts\Api;
 use Request;
 use Config;
-use Noxueeto\Ucenter\Services\Help;
+use Noxue\Ucenter\Services\Help;
 
 class ApiController extends Controller
 {

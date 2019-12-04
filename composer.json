@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Noxueeto\\Ucenter\\": "src/"
+            "Noxue\\Ucenter\\": "src/"
         }
     },
     "require": {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Noxueeto\Ucenter\Services;
+namespace Noxue\Ucenter\Services;
 
-class Api implements \Noxueeto\Ucenter\Contracts\Api
+class Api implements \Noxue\Ucenter\Contracts\Api
 {
     use Help;
 
