@@ -1,9 +1,9 @@
-<?php namespace EtoUc\Ucenter\Controllers;
+<?php namespace Etouc\Ucenter\Controllers;
 
 use App\Http\Controllers\Controller;
-use EtoUc\Ucenter\Contracts\Api;
+use Etouc\Ucenter\Contracts\Api;
 use Request,Config;
-use EtoUc\Ucenter\Services\Help;
+use Etouc\Ucenter\Services\Help;
 
 class ApiController extends Controller 
 {

@@ -14,7 +14,7 @@ composer require etozqf/ucenter1
 ~~~
 'providers' => [
 
-    'EtoUc\Ucenter\UcenterServiceProvider'
+    'Etouc\Ucenter\UcenterServiceProvider'
 
 ]
 ~~~
@@ -24,7 +24,7 @@ composer require etozqf/ucenter1
 ~~~
 'aliases' => [
 
-    'Ucenter' => 'EtoUc\Ucenter\Facades\Ucenter'
+    'Ucenter' => 'Etouc\Ucenter\Facades\Ucenter'
 
 ]
 ~~~
@@ -62,7 +62,7 @@ return [
     'apifilename'    => env('UC_APIFILENAME', 'uc'),
 
     //这里如果要异步登陆，可以直接继承这个类实现其中的方法，也可以创建app/Service/Ucenter.php(文件放哪里都可以，这里只是推荐) 实现该类实现的接口【*】
-    'service'        => env('UC_SERVICE', 'EtoUc\Ucenter\Services\Api'),
+    'service'        => env('UC_SERVICE', 'Etouc\Ucenter\Services\Api'),
 ];
 
 ```

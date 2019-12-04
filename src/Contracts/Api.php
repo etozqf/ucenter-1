@@ -1,4 +1,4 @@
-<?php namespace EtoUc\Ucenter\Contracts;
+<?php namespace Etouc\Ucenter\Contracts;
 
 interface Api
 {

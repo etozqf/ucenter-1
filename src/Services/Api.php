@@ -1,8 +1,8 @@
-<?php namespace EtoUc\Ucenter\Services;
+<?php namespace Etouc\Ucenter\Services;
 
-use EtoUc\Ucenter\Services\Help;
+use Etouc\Ucenter\Services\Help;
 
-class Api implements \EtoUc\Ucenter\Contracts\Api
+class Api implements \Etouc\Ucenter\Contracts\Api
 {
     use Help;
 

@@ -1,4 +1,4 @@
-<?php namespace EtoUc\Ucenter;
+<?php namespace Etouc\Ucenter;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -30,6 +30,6 @@ class UcenterServiceProvider extends ServiceProvider
             return new Ucenter;
         });
 
-        $this->app->bind('EtoUc\Ucenter\Contracts\Api', config('ucenter.service'));
+        $this->app->bind('Etouc\Ucenter\Contracts\Api', config('ucenter.service'));
     }
 }
