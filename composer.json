@@ -1,11 +1,12 @@
 {
-    "name": "etozqf/ucenter1",
+    "name": "etozqf/ucenter",
     "description": "ucenter client for laravel",
     "license": "MIT",
     "authors": [
         {
             "name": "etozqf",
             "email": "78746435@qq.com",
+            "homepage": "http://eto.com",
             "role": "Developer"
         }
     ],
@@ -22,8 +23,7 @@
         "mockery/mockery": "0.9.*",
         "fzaninotto/faker": "~1.0"
     },
-    "extra": {
-    },
+    "extra": {},
     "minimum-stability": "dev",
     "prefer-stable": true
 }

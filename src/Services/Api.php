@@ -1,6 +1,6 @@
-<?php namespace Etouc\Ucenter\Services;
+<?php
 
-use Etouc\Ucenter\Services\Help;
+namespace Etouc\Ucenter\Services;
 
 class Api implements \Etouc\Ucenter\Contracts\Api
 {
@@ -9,85 +9,83 @@ class Api implements \Etouc\Ucenter\Contracts\Api
     public $get = [];
 
     public $post = [];
-    
-    public  function test()
+
+    public function test()
     {
         return API_RETURN_SUCCEED;
     }
-    
-    public  function deleteuser()
+
+    public function deleteuser()
     {
         $uids = $this->get['ids'];
-       
+
         /*
         同步删除用户代码
          */
-        
+
         return API_RETURN_SUCCEED;
     }
-    
-    public  function renameuser()
+
+    public function renameuser()
     {
         $uid = $this->get['uid'];
         $oldusername = $this->get['oldusername'];
         $newusername = $this->get['newusername'];
-        
+
         /*
         同步重命名用户代码
         */
-        
+
         return API_RETURN_SUCCEED;
     }
 
-    public  function updatepw()
+    public function updatepw()
     {
-
         $username = $this->get['username'];
         $password = $this->get['password'];
 
         /*
         同步更新用户密码
          */
-        
+
         return API_RETURN_SUCCEED;
     }
 
-    public  function gettag()
+    public function gettag()
     {
         $name = $this->get['id'];
-        
+
         $return = [];
+
         return $this->serialize($return, 1);
     }
 
-    public  function synlogin()
+    public function synlogin()
     {
         $uid = $this->get['uid'];
         $username = $this->get['username'];
-
+        var_dump($username);
+        exit;
         /*
-        
+
         同步登陆代码
-        
+
         */
         return API_RETURN_SUCCEED;
     }
 
-    public  function synlogout()
+    public function synlogout()
     {
-
         /*
-        
+
         同步注销代码
-        
+
         */
         return API_RETURN_SUCCEED;
     }
 
-
-    public  function updatebadwords()
+    public function updatebadwords()
     {
-
         $cachefile = API_ROOT.'uc_client/data/cache/badwords.php';
         $fp = fopen($cachefile, 'w');
         $data = array();
@@ -101,49 +99,46 @@ class Api implements \Etouc\Ucenter\Contracts\Api
         $s .= '$_CACHE[\'badwords\'] = '.var_export($data, true).";\r\n";
         fwrite($fp, $s);
         fclose($fp);
-        
+
         return API_RETURN_SUCCEED;
     }
 
-    public  function updatehosts()
+    public function updatehosts()
     {
-
         $cachefile = API_ROOT.'uc_client/data/cache/hosts.php';
         $fp = fopen($cachefile, 'w');
         $s = "<?php\r\n";
         $s .= '$_CACHE[\'hosts\'] = '.var_export($this->post, true).";\r\n";
         fwrite($fp, $s);
         fclose($fp);
-        
+
         return API_RETURN_SUCCEED;
     }
 
-    public  function updateapps()
+    public function updateapps()
     {
-
         $cachefile = API_ROOT.'uc_client/data/cache/apps.php';
         $fp = fopen($cachefile, 'w');
         $s = "<?php\r\n";
         $s .= '$_CACHE[\'apps\'] = '.var_export($this->post, true).";\r\n";
         fwrite($fp, $s);
         fclose($fp);
-        
+
         return API_RETURN_SUCCEED;
     }
 
-    public  function updateclient()
+    public function updateclient()
     {
-
         $cachefile = API_ROOT.'uc_client/data/cache/settings.php';
         $fp = @fopen($cachefile, 'w');
         $s = "<?php\r\n";
         $s .= '$_CACHE[\'settings\'] = '.var_export($this->post, true).";\r\n";
         @fwrite($fp, $s);
         @fclose($fp);
-        
+
         return API_RETURN_SUCCEED;
     }
-    
+
     /*public  function updatesmsapi()
     {
 
@@ -153,35 +148,34 @@ class Api implements \Etouc\Ucenter\Contracts\Api
         $s .= '$_CACHE[\'smsapi\'] = '.var_export($this->post, true).";\r\n";
         @fwrite($fp, $s);
         @fclose($fp);
-        
+
         return API_RETURN_SUCCEED;
     }*/
-   
-    public  function updatecredit()
-    {
 
+    public function updatecredit()
+    {
         $credit = $this->get['credit'];
         $amount = $this->get['amount'];
         $uid = $this->get['uid'];
-        
+
         return API_RETURN_SUCCEED;
     }
 
-    public  function getcreditsettings()
+    public function getcreditsettings()
     {
-
         $credits = [];
+
         return $this->serialize($credits);
     }
 
-    public  function updatecreditsettings()
+    public function updatecreditsettings()
     {
-
         $credit = $this->get['credit'];
+
         return API_RETURN_SUCCEED;
     }
 
-    public  function getcredit()
+    public function getcredit()
     {
         $uid = $this->get['uid'];
         $credit = $this->get['credit'];
@@ -194,7 +188,7 @@ class Api implements \Etouc\Ucenter\Contracts\Api
         if (method_exists($this, $function)) {
             return call_user_func_array([$this, $function], $arguments);
         } else {
-            throw new Exception("function not exists");           
+            throw new Exception('function not exists');
         }
     }
 }
